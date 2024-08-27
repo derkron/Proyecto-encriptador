@@ -9,12 +9,12 @@ const matriz = [
     ["u", "ufat"],
 ];
 
-function btnEncriptar() {
+function botonEncriptar() {
     output.value = encriptar(input.value);
     output.style.backgroundImage = "none";
 }
 
-function btnDesencriptar() {
+function botonDesencriptar() {
     output.value = desencriptar(input.value);
     output.style.backgroundImage = "none";
 }
