@@ -1,5 +1,5 @@
-const output = document.querySelector(".contenido__output");
-const input = document.querySelector(".areaTextoIngresado");
+const output = document.querySelector(".contenidoSalida");
+const input = document.querySelector(".contenidoEntrada");
 
 const matriz = [
     ["e", "enter"],
@@ -21,6 +21,7 @@ function btnDesencriptar() {
 
 function limpiar() {
     input.value = '';
+    output.value = '';
 }
 
 function copiar() {

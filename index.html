@@ -16,49 +16,33 @@
         </div>
     </header>
 
-    <main class="main">
-        <div class="areaEncriptacion">
-            
-            <section class="entrada">
-                <textarea class="areaTextoIngresado" id="campoTexto" placeholder="Ingrese su texto a encriptar / desencriptar ..."></textarea>
-                <div class="areaAdvertencia">
-                    <img class="advertencia_logo" src="img/Vector.png" alt="Imagen alerta">
-                    <p class="areaAdvertencia_texto">  Solo letras minusculas y sin acentos</p>
-                </div>
-
-                <div class="areaEncriptacion_entrada_botones">
-                    <button class="areaEncriptacion_entrada_botones_encriptar boton" id="boton" onclick="btnEncriptar()">Encriptar
-                    </button>
-                    <button class="areaEncriptacion_entrada_botones_desencriptar boton" id="boton" onclick="btnDesencriptar()">Desencriptar
-                    </button>
-                    <button class="limpiar boton" type="button" id="limpiar" onclick="limpiar()">Limpiar</button>
-                    
-
-                </div>
-
-            </section>
-
-            <section class="areaEncriptacion_salida">
-                <div class="areaEncriptacion_salida_mensaje" id="mensajes">
-                    <p class="areaEncriptacion_salida_mensaje1">Ningun mensaje fue encontrado</p>
-
-                </div>
-
-                <textarea  class="contenido__output"></textarea>
-              
-
-                <div class="areaEncriptacion_salida_copiar" id="botonCopiar">
-                    <button class="areaEncriptacion_salida_botonCopiar"type="button" id="botonCopiar_boton" onclick="copiar()">Copiar</button>
-
-                </div>
-                
-
-            </section>
-            
-         </div>
-
+    <main class="contenedor">
+          <div class="margen">
+            <h2 class="tituloEncanbezado">Encriptador / Desencriptador</h2>
+            <div class="contenido">
+                <section>
+                    <textarea class="contenidoEntrada" placeholder="Escribe algo..."></textarea>
+                    <div class="aviso">
+                        <img class="advertencia_logo" src="img/Vector.png" alt="Imagen alerta">
+                        <p class="areaAdvertencia_texto">  Solo letras minusculas y caracteres especiales</p>
+                    </div>
+                    <div class="botones">
+                        <button onclick="btnEncriptar();">Encriptar</button>
+                        <button onclick="btnDesencriptar();">Desencriptar</button>
+                        <button onclick="limpiar();">Limpiar</button>
+                    </div>
+                </section>
+                <section>
+                    <textarea readonly class="contenidoSalida"></textarea>
+                    <div class="copiar">
+                        <button onclick="copiar();">Copiar</button>
+                    </div>
+                </section>
+            </div>
+        </div>
+        
     </main>
-          
+              
 <body>
 
 
@@ -66,13 +50,18 @@
 
 
     <footer class="footer">
-        <a href="https://github.com/derkron">
+       
             <div class="footer-content">
-                <img class="logoGitHub" src="img/github.png">
                 <p>Desarrollado por Cristian Gomez Martinez</p>
+                <a href="https://github.com/derkron">
+                <img class="logoGitHub" src="img/github.png">
                 
+                </a>
+                <a href="https://www.linkedin.com/in/cristian-g%C3%B3mez-mart%C3%ADnez-0259a3283/">
+                <img src="img/icons8-linkedin-48.png" alt="Icono de linkedin">
+                </a>
             </div>
-        </a>
+        </div>
     </footer>
     <script src="scripts/index.js"></script>
 </body>

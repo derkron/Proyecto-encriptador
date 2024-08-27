@@ -5,7 +5,7 @@
 }
 
 .encabezado {
-    background: linear-gradient(135deg, #aeeeee, #b2f9b9);
+    background: linear-gradient(135deg, #6f6e6e, #515351);
     padding: 0.6rem 1rem;
     
 }
@@ -18,7 +18,7 @@
 }
 
 .encabezado_logo{
-    width: 6vw;
+    width: 7vw;
     padding-left: 0.5rem;
     
 }
@@ -26,29 +26,86 @@
 .encabezado_titulo{
     font-family: "inter" , sans-serif ;
     font-size: 2rem;
-    color: rgb(30, 21, 21);
+    color: rgba(255, 255, 255, 0.914);
     padding-left: 35%;
 }
+.body {
+    font-family: var(--fuenteParrafo);
+    font-size: 1.6rem;
+    line-height: 2;
+    margin: 0;
+}
 
-.main{
-    padding: 7.9rem 2rem;
+.contenedor{
+    margin: 1.5rem;
+    max-width: 120rem;
+    width: 95%;
+}
+.areaAdvertencia_logo{
+    width: 1.2rem;
+    margin-top: 0.1rem;
 }
 
 
-.areaEncriptacion{
+.margen{
+    box-shadow: 0px 5px 12px 8px rgba(120, 111, 133, 0.973);
+    background-color: var(--blanco);
+    padding: 2rem;
+
+    border-radius: 1.2rem;
+}
+
+.contenido{
     display: flex;
-    justify-content: space-around;
-    height: 90%;
-    
+    justify-content: space-evenly;
+    gap:2rem;
+    flex-wrap: wrap;
+}
+.tituloEncanbezado{
+    text-align:center;
+    font-size: 2.5rem;
+    margin: 2rem 0 0 0;
 }
 
-.entrada {
+.contenidoEntrada{
+    width: 35rem;
+    height: 25rem;
+}
+
+.aviso{
     display: flex;
-    flex-direction: column;
-    
-
+    gap:1rem;
+    margin-left: 1rem;
 }
 
+.aviso__icono{
+    width: 1.8rem;
+    height: 1.8rem;
+}
+
+.aviso__texto{
+    margin:0 0 1.6rem 0;
+    font-weight: bold;
+    text-decoration: underline;
+}
+
+.botones{
+    display: flex;
+    justify-content: space-evenly;
+}
+
+.contenidoSalida{
+    background-repeat: no-repeat;
+    height: 25rem;
+    width: 35rem;
+    background-size: contain;
+    background-position: center;
+}
+
+.copiar{
+    display: flex;
+    justify-content: center;
+}
 .areaTextoIngresado{
    
     background-color: whitesmoke;
@@ -65,166 +122,10 @@
     color:black;
 }
 
-::placeholder{
-    color: blue;
-}
-
-.areaAdvertencia{
-    display: flex;
-    align-items: center;
-}
-
-.areaAdvertencia_logo{
-    width: 1.2rem;
-    margin-top: 0.1rem;
-}
-
-.areaAdvertencia_texto{
-    font-family:"inter" , sans-serif;
-    font-size: 0,9rem;
-    font-weight: bold;
-    color: rgb(87, 73, 73);
-    margin-top: 0.3rem;
-}
-
-.areaEncriptacion_entrada_botones{
-    display: flex;
-    justify-content: center;
-    margin-top: 1rem;
-    height: 4rem;
-}
-
-.boton{
-    font-family:"inter" , sans-serif;
-    color: black;
-    font-weight: 800;
-    padding: 0.7rem 2.5rem;
-    border-radius: 15px;
-    font-size: 1rem;
-    transition: all 5ms;
-}
-
-.boton:hover{
-    transform: scale(1.1);
-}
-
-.areaEncriptacion_entrada_botones_encriptar{
-    padding: 0 3.5rem;
-    margin-right: 2rem;
-    background: linear-gradient(135deg, gray, white);
-    border: 1px solid black;
-    font-size: 1.3rem;
-   
-}
-
-.areaEncriptacion_entrada_botones_encriptar:hover{
-    background: linear-gradient(135deg, #5861E0, white);
-    border-color: black;
-}
-
-.areaEncriptacion_entrada_botones_desencriptar{
-    background-color: white;
-    border: 1px solid black;
-    font-size: 1.3rem;
-    margin-right: 2rem;
-    background: linear-gradient(135deg, gray, white);
-    
-}
-
-.areaEncriptacion_entrada_botones_desencriptar:hover{
-    background: linear-gradient(135deg, #5861E0, white);
-    
-    border-color: black;
-}
-
-.areaEncriptacion_entrada_botones_limpiar{
-    background-color: white;
-    border: 1px solid black;
-    font-size: 1.3rem;
-    background: linear-gradient(135deg, gray, white);
-}
-
-.areaEncriptacion_entrada_botones_limpiar:hover{
-    background: linear-gradient(135deg, #5861E0, white);
-    border-color: black
-}
-
-.areaEncriptacion_salida{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    border: 3px solid white;
-    border-radius: 12px;
-    width: 28vw;
-    background-color: rgba(184, 176, 176, 0.649);
-}
-
-.areaEncriptacion_salida_imagen{
-    width: 20vw;
-    margin: 0 1rem 4rem 0;
-    
-}
-
-.areaEncriptacion_salida_mensaje{
-    width: 20vw;
-    margin-bottom: 2rem;
-    font-family: "inter" , sans-serif;
-    text-align: center;
-    color: white;
-    
-
-}
-
-.areaEncriptacion_salida_mensaje1{
-    margin-bottom: 1rem;
-    font-weight: bold;
-    font-size: 1.8rem;
-}
-
-.areaEncriptacion_salida_mensaje2{
-    font-size: 1rem;
-}
-
-.areaEncriptacion_salida_textoMostrado{
-    display: none;
-    font-family: "inter" , sans-serif;
-    font-size: 1.6rem;
-    color: white;
-    background-color: rgb(38, 131, 150);
-    width: 18vw;
-    height: 28rem;
-    opacity: 0.8;
-    margin: 1rem 0 0.5rem 0;
-    padding: 1rem 1.5rem 1.8rem 1.5rem;
-    border: none;
-    border-radius: 12px;
-    box-shadow: 0.5px 0.5px 8px;
-}
-
-.areaEncriptacion_salida_copiar{
-    display: none;
-    text-align: center;
-}
-
-.areaEncriptacion_salida_botonCopiar{
-    background-color: white;
-    border: 1px solid white;
-    padding: 0.7rem 3.2rem;
-    transition: all 5ms;
-    margin-top: 0.2rem;
-    font-size: 1.25rem;
-    border-radius: 15px;
-}
-
-.areaEncriptacion_salida_botonCopiar:hover{
-    background: linear-gradient(135deg, gray, white);
-    border-color: red;
-
-}
 
 .footer {
     text-align: center;
-    background-color: black;
+    background: linear-gradient(135deg, #000000, #515351);
     padding: 5px;
     border: 2px solid #3498db; 
     border-radius: 5px;
@@ -245,6 +146,7 @@
 
 .footer-content p {
     font-family: "inter" , sans-serif;
+    color: white;
     margin: 0;
     font-size: 25px;
 }
@@ -256,114 +158,3 @@
 }
 
 
-@media (max-width: 768px) {
-
-    .encabezado_logo{
-        width: 15vw;
-        padding-left: 0.5rem;
-
-    }
-    .encabezado_titulo {
-        font-size: 1.6rem;
-        padding-left: 17%;
-    }
-
-    .areaEncriptacion {
-        flex-direction: column;
-        align-items: center;  
-        
-    }
-
-    .areaTextoIngresado {
-        width: 85vw;
-        height: 40vw;
-        
-        
-    }
-
-    .areaEncriptacion_salida {
-        width: 90vw;
-        margin-top: 2rem ;
-    }
-
-    .areaEncriptacion_salida_imagen {
-        width: 40vw;
-    }
-
-    .areaEncriptacion_salida_mensaje {
-        width: 60vw;
-    }
-
-    .areaEncriptacion_salida_textoMostrado {
-        width: 75vw;
-    }
-
-    .main{
-        flex-direction: column;
-        justify-content: center;
-        width: 90%;
-        height: 100%;
-        
-    }
-}
-
-
-@media (max-width: 480px) {
-    .encabezado_container {
-        flex-direction: column;
-        align-items: center;
-    }
-
-    .encabezado_logo {
-        width: 20vw;
-    }
-
-    .encabezado_titulo {
-        font-size: 1.4rem;
-        padding-left: 0;
-        text-align: center;
-        margin-top: 0.5rem;
-    }
-
-    .main {
-        padding: 1rem 1rem;
-    }
-
-    .areaEncriptacion {
-        flex-direction: column;
-        align-items: center;
-        padding-left: 1.2rem;  
-        
-    }
-    .areaTextoIngresado {
-        width: 90vw;
-        height: 60vw;
-        font-size: 1.8rem;
-        
-    }
-
-    .areaEncriptacion_salida {
-        width: 90vw;
-        padding: 1rem;
-        background-color: transparent;
-    }
-
-    .areaEncriptacion_salida_imagen {
-        width: 50vw;
-    }
-
-    .areaEncriptacion_salida_mensaje {
-        width: 80vw;
-    }
-
-    .areaEncriptacion_salida_textoMostrado {
-        width: 85vw;
-    }
-
-    .boton {
-        font-size: 0.8rem;
-        padding: 0.5rem 1rem;
-    }
-
-
-}
