@@ -1,7 +1,7 @@
 *{
     margin: 0;
     padding: 0;
-    font-family: "inter" , sans-serif;
+
 }
 
 .encabezado {
@@ -24,17 +24,20 @@
 }
 
 .encabezado_titulo{
-    font-family: "inter" , sans-serif ;
+    font-family: "Roboto", sans-serif;
     font-size: 2rem;
     color: rgba(255, 255, 255, 0.914);
     padding-left: 35%;
 }
 .body {
-    font-family: var(--fuenteParrafo);
     font-size: 1.6rem;
     line-height: 2;
     margin: 0;
 }
+::placeholder{
+    color: rgb(57, 72, 188);
+}
+
 
 .contenedor{
     margin: 1.5rem;
@@ -68,8 +71,10 @@
 }
 
 .contenidoEntrada{
+    font-family: "Roboto", sans-serif;
     width: 35rem;
     height: 25rem;
+    font-size: 2rem;
 }
 
 .aviso{
@@ -92,9 +97,26 @@
 .botones{
     display: flex;
     justify-content: space-evenly;
+    
+}
+.botonMod{
+    padding: 0 3.5rem;
+    margin-right: 2rem;
+    background: linear-gradient(135deg, rgb(115, 147, 170), rgb(119, 135, 128));
+    border: 1px solid rgba(156, 128, 128, 0.641);
+    font-size: 1.3rem;
+}
+.botonCopiar{
+    padding: 0 3.5rem;
+    margin-right: 2rem;
+    background: linear-gradient(135deg, rgb(115, 147, 170), rgb(119, 135, 128));
+    border: 1px solid rgba(156, 128, 128, 0.641);
+    font-size: 1.3rem;
 }
 
 .contenidoSalida{
+    font-family: "Roboto", sans-serif;
+    font-size: 2rem;
     background-repeat: no-repeat;
     height: 25rem;
     width: 35rem;

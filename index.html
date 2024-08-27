@@ -5,14 +5,17 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Encriptador de texto</title>
     <link rel="stylesheet" href="./style.css">
-    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+        
 </head>
 
 <body>
     <header class="encabezado">
         <div class="encabezado_container">
         <img class="encabezado_logo" src="img/Logo.png" alt="Imagen logo Alura">
-        <h1 class="encabezado_titulo">CHALLENGE ALURA</h1>
+        <h1 class="encabezado_titulo">ALURA CHALLENGE </h1>
         </div>
     </header>
 
@@ -21,21 +24,21 @@
             <h2 class="tituloEncanbezado">Encriptador / Desencriptador</h2>
             <div class="contenido">
                 <section>
-                    <textarea class="contenidoEntrada" placeholder="Escribe algo..."></textarea>
+                    <textarea class="contenidoEntrada" placeholder="escriba el texto a encriptar o desencriptar"></textarea>
                     <div class="aviso">
                         <img class="advertencia_logo" src="img/Vector.png" alt="Imagen alerta">
                         <p class="areaAdvertencia_texto">  Solo letras minusculas y caracteres especiales</p>
                     </div>
                     <div class="botones">
-                        <button onclick="btnEncriptar();">Encriptar</button>
-                        <button onclick="btnDesencriptar();">Desencriptar</button>
-                        <button onclick="limpiar();">Limpiar</button>
+                        <button onclick="btnEncriptar();" class="botonMod">Encriptar</button>
+                        <button onclick="btnDesencriptar();" class="botonMod">Desencriptar</button>
+                        <button onclick="limpiar();" class="botonMod">Limpiar</button>
                     </div>
                 </section>
                 <section>
                     <textarea readonly class="contenidoSalida"></textarea>
                     <div class="copiar">
-                        <button onclick="copiar();">Copiar</button>
+                        <button onclick="copiar();" class="botonCopiar">Copiar</button>
                     </div>
                 </section>
             </div>
@@ -52,7 +55,7 @@
     <footer class="footer">
        
             <div class="footer-content">
-                <p>Desarrollado por Cristian Gomez Martinez</p>
+                <p>Desarrollado por Cristian Gomez Martinez 2024</p>
                 <a href="https://github.com/derkron">
                 <img class="logoGitHub" src="img/github.png">
                 
