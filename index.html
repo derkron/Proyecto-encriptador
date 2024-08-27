@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Encriptador de texto</title>
+    <link rel="stylesheet" href="./style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header class="encabezado">
+        <div class="encabezado_container">
+        <img class="encabezado_logo" src="img/Logo.png" alt="Imagen logo Alura">
+        <h1 class="encabezado_titulo">CHALLENGE ALURA</h1>
+        </div>
+    </header>
+
+    <main class="main">
+        <div class="areaEncriptacion">
+            
+            <section class="entrada">
+                <textarea class="areaTextoIngresado" id="campoTexto" placeholder="Ingrese su texto a encriptar / desencriptar ..."></textarea>
+                <div class="areaAdvertencia">
+                    <img class="advertencia_logo" src="img/Vector.png" alt="Imagen alerta">
+                    <p class="areaAdvertencia_texto">  Solo letras minusculas y sin acentos</p>
+                </div>
+
+                <div class="areaEncriptacion_entrada_botones">
+                    <button class="areaEncriptacion_entrada_botones_encriptar boton" id="boton" onclick="btnEncriptar()">Encriptar
+                    </button>
+                    <button class="areaEncriptacion_entrada_botones_desencriptar boton" id="boton" onclick="btnDesencriptar()">Desencriptar
+                    </button>
+                    <button class="limpiar boton" type="button" id="limpiar" onclick="limpiar()">Limpiar</button>
+                    
+
+                </div>
+
+            </section>
+
+            <section class="areaEncriptacion_salida">
+                <div class="areaEncriptacion_salida_mensaje" id="mensajes">
+                    <p class="areaEncriptacion_salida_mensaje1">Ningun mensaje fue encontrado</p>
+
+                </div>
+
+                <textarea  class="contenido__output"></textarea>
+              
+
+                <div class="areaEncriptacion_salida_copiar" id="botonCopiar">
+                    <button class="areaEncriptacion_salida_botonCopiar"type="button" id="botonCopiar_boton" onclick="copiar()">Copiar</button>
+
+                </div>
+                
+
+            </section>
+            
+         </div>
+
+    </main>
+          
+<body>
+
+
+
+
+
+    <footer class="footer">
+        <a href="https://github.com/derkron">
+            <div class="footer-content">
+                <img class="logoGitHub" src="img/github.png">
+                <p>Desarrollado por Cristian Gomez Martinez</p>
+                
+            </div>
+        </a>
+    </footer>
+    <script src="scripts/index.js"></script>
+</body>
+
+</html>
